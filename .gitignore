@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Local environments and caches
+.venv/
+.cache/
+tmp/
+
+# Model and dataset payloads
+models/
+data/cache/
+data/snapshots/
+
+# Runtime logs and failures
+logs/
+results/errors/
+
+# Raw experiment records are published as Release assets
+results/raw/
+
+# Local archives
+release_assets/
+*.tar
+*.tar.gz
+*.zip
+
+# Secrets and local overrides
+.env
+.env.*
+*.pem
+*.key
+credentials*

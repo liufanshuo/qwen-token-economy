@@ -1,0 +1,23 @@
+{
+  "bundle": "gsm8k_main_remaining",
+  "started_at_utc": "2026-07-31T16:46:45.560029+00:00",
+  "finished_at_utc": "2026-08-01T18:31:29.243697+00:00",
+  "state": "success",
+  "runs": [
+    {
+      "config": "configs/gsm8k_main.yaml",
+      "experiment_name": "gsm8k_main_qwen25_7b",
+      "protocols": [
+        "cot",
+        "self_consistency_3",
+        "self_consistency_5",
+        "self_refine_1",
+        "self_refine_2"
+      ],
+      "started_at_utc": "2026-07-31T16:46:45.564393+00:00",
+      "finished_at_utc": "2026-08-01T18:31:29.227893+00:00",
+      "state": "success"
+    }
+  ],
+  "error": null
+}

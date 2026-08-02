@@ -1,0 +1,47 @@
+bundles:
+  gsm8k_main_remaining:
+    runs:
+    - config: configs/gsm8k_main.yaml
+      protocols:
+      - cot
+      - self_consistency_3
+      - self_consistency_5
+      - self_refine_1
+      - self_refine_2
+      analyze: true
+  math500_smoke_then_main:
+    runs:
+    - config: configs/math500_smoke.yaml
+      protocols: &id001
+      - direct
+      - cot
+      - self_consistency_3
+      - self_consistency_5
+      - self_refine_1
+      - self_refine_2
+      analyze: true
+      quality_gate:
+        max_parse_error_rate: 0.0
+        max_truncation_rate: 0.0
+    - config: configs/math500_main.yaml
+      protocols: *id001
+      analyze: true
+  gsm8k_extra_seeds:
+    runs:
+    - config: configs/gsm8k_sc_seed20260731.yaml
+      protocols: &id002
+      - direct
+      - self_consistency_3
+      - self_consistency_5
+      analyze: true
+    - config: configs/gsm8k_sc_seed20260801.yaml
+      protocols: *id002
+      analyze: true
+  math500_extra_seeds:
+    runs:
+    - config: configs/math500_sc_seed20260731.yaml
+      protocols: *id002
+      analyze: true
+    - config: configs/math500_sc_seed20260801.yaml
+      protocols: *id002
+      analyze: true

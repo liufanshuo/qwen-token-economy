@@ -1,0 +1,14 @@
+experiment_name: math500_sc_seed20260731_qwen25_7b
+model_path: models/Qwen2.5-7B-Instruct
+load_mode: bf16
+dataset: math500
+split: test
+n_samples: 500
+sample_seed: 20260730
+run_seed: 20260731
+max_new_tokens: 1024
+critique_max_new_tokens: 512
+protocols:
+- direct
+- self_consistency_3
+- self_consistency_5

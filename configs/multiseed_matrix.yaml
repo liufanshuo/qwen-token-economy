@@ -1,0 +1,22 @@
+protocols:
+- self_consistency_3
+- self_consistency_5
+datasets:
+  gsm8k:
+    n_samples: 1319
+    runs:
+    - seed: 20260730
+      experiment_name: gsm8k_main_qwen25_7b
+    - seed: 20260731
+      experiment_name: gsm8k_sc_seed20260731_qwen25_7b
+    - seed: 20260801
+      experiment_name: gsm8k_sc_seed20260801_qwen25_7b
+  math500:
+    n_samples: 500
+    runs:
+    - seed: 20260730
+      experiment_name: math500_main_qwen25_7b
+    - seed: 20260731
+      experiment_name: math500_sc_seed20260731_qwen25_7b
+    - seed: 20260801
+      experiment_name: math500_sc_seed20260801_qwen25_7b

@@ -1,0 +1,17 @@
+experiment_name: gsm8k_smoke_v2_qwen25_7b
+model_path: models/Qwen2.5-7B-Instruct
+load_mode: bf16          # 当前固定：1×A100-80GB，使用原始 BF16 权重
+dataset: gsm8k
+split: test
+n_samples: 20
+sample_seed: 20260730
+run_seed: 20260730
+max_new_tokens: 512
+critique_max_new_tokens: 512
+protocols:
+  - direct
+  - cot
+  - self_consistency_3
+  - self_consistency_5
+  - self_refine_1
+  - self_refine_2

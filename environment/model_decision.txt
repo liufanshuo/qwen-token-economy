@@ -1,0 +1,5 @@
+MODEL=Qwen/Qwen2.5-7B-Instruct
+LOAD_MODE=bf16
+GPU_COUNT=1
+QUANTIZATION=none
+REASON=Single A100 80GB has ample VRAM; use original BF16 weights to avoid quantization as an experimental confound.

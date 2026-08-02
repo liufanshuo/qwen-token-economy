@@ -1,0 +1,14 @@
+experiment_name: gsm8k_sc_seed20260731_qwen25_7b
+model_path: models/Qwen2.5-7B-Instruct
+load_mode: bf16
+dataset: gsm8k
+split: test
+n_samples: 1319
+sample_seed: 20260730
+run_seed: 20260731
+max_new_tokens: 512
+critique_max_new_tokens: 512
+protocols:
+- direct
+- self_consistency_3
+- self_consistency_5

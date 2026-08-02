@@ -1,0 +1,17 @@
+experiment_name: math500_smoke_qwen25_7b
+model_path: models/Qwen2.5-7B-Instruct
+load_mode: bf16
+dataset: math500
+split: test
+n_samples: 20
+sample_seed: 20260730
+run_seed: 20260730
+max_new_tokens: 1024
+critique_max_new_tokens: 512
+protocols:
+- direct
+- cot
+- self_consistency_3
+- self_consistency_5
+- self_refine_1
+- self_refine_2

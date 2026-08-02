@@ -1,0 +1,50 @@
+{
+  "downloaded_at_utc": "2026-07-31T07:43:38.159634+00:00",
+  "source": "ModelScope",
+  "modelscope_version": "1.35.2",
+  "datasets_version": "3.6.0",
+  "datasets": {
+    "gsm8k": {
+      "repo_id": "AI-ModelScope/gsm8k",
+      "source_split": "validation",
+      "local_split": "test",
+      "output_dir": "/home/qwen-token-exp/token_economy/data/snapshots/gsm8k_main",
+      "num_rows": 1319,
+      "columns": [
+        "question",
+        "answer"
+      ],
+      "fingerprint": "db63a78879211699",
+      "file_sha256": {
+        "dataset_dict.json": "65fae6c706b1546da1530d427b62b39df6dd156cce4b92a208091410c52a4362",
+        "test/data-00000-of-00001.arrow": "45965b000311d1550e5619b60b5bf31cf76edebfd8b8eddc62a876fbf8c9be95",
+        "test/dataset_info.json": "e81d27a2c1e847219c6aa0de22a3199c6d1a6a012f9187b0835a6fca6731f13a",
+        "test/state.json": "59d21c90fbce46d6001f96d28afd4fa7e4d95454b4b6c401b0917f75309ecbd8",
+        "train/data-00000-of-00001.arrow": "6146bca074f4c6c5e07de7e96cc968adab3833dbdafeda21830f27558eea3d9b",
+        "train/dataset_info.json": "e81d27a2c1e847219c6aa0de22a3199c6d1a6a012f9187b0835a6fca6731f13a",
+        "train/state.json": "e40c104b3589271ae1158090cc39e1a8fef621456c2cb742874413470cb7f953"
+      }
+    },
+    "math500": {
+      "repo_id": "AI-ModelScope/MATH-500",
+      "source_split": "test",
+      "local_split": "test",
+      "output_dir": "/home/qwen-token-exp/token_economy/data/snapshots/math500",
+      "num_rows": 500,
+      "columns": [
+        "problem",
+        "answer",
+        "solution",
+        "level",
+        "subject"
+      ],
+      "fingerprint": "737aaa41b4457eae",
+      "file_sha256": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "test/data-00000-of-00001.arrow": "1a0f2c3b937a6773cb77b491436110af3f5224d595aca1939c5db7ad5d6f0c26",
+        "test/dataset_info.json": "7834e2553ab58ac718e0da970fc6f986b35abc64572e6a1949a67a68fb4888f5",
+        "test/state.json": "c1e3c7414e8d5a704a7f9c9bb9132bd571416e5744a886fb1f73352feb6c6a81"
+      }
+    }
+  }
+}
