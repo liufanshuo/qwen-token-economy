@@ -45,3 +45,14 @@ bundles:
     - config: configs/math500_sc_seed20260801.yaml
       protocols: *id002
       analyze: true
+  math500_main_v3:
+    runs:
+    - config: configs/math500_main_v3.yaml
+      protocols:
+      - direct
+      - cot
+      - self_consistency_3
+      - self_consistency_5
+      - self_refine_1
+      - self_refine_2
+      analyze: true
