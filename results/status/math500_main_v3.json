@@ -1,0 +1,24 @@
+{
+  "bundle": "math500_main_v3",
+  "started_at_utc": "2026-08-02T05:06:25.378460+00:00",
+  "finished_at_utc": "2026-08-03T01:27:33.803926+00:00",
+  "state": "success",
+  "runs": [
+    {
+      "config": "configs/math500_main_v3.yaml",
+      "experiment_name": "math500_main_v3_qwen25_7b",
+      "protocols": [
+        "direct",
+        "cot",
+        "self_consistency_3",
+        "self_consistency_5",
+        "self_refine_1",
+        "self_refine_2"
+      ],
+      "started_at_utc": "2026-08-02T05:06:25.383777+00:00",
+      "finished_at_utc": "2026-08-03T01:27:33.801930+00:00",
+      "state": "success"
+    }
+  ],
+  "error": null
+}
